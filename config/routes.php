@@ -5,8 +5,8 @@
 return [
     //Образец: 'Запрос' => 'NameController/actionName'
 
-    'news/([0-9]+)' => 'news/view/$1',
-    'news' => 'news/index',
-    'products' => 'product/list'
+    'product/([0-9]+)' => 'product/view/$1',
+    ''=>'site/index', //путь будет загружать главную страницу
+
 ];
 

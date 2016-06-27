@@ -2,8 +2,9 @@
 
 class ProductController
 {
-    public function actionList(){
-        echo __CLASS__;
+    public function actionView($id){
+        require_once ROOT . '/views/product/view.php';
         return true;
     }
 }
+
