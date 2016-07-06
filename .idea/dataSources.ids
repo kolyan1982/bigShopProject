@@ -10,79 +10,101 @@
       <schema id="1" name="shop"/>
       <table id="2" parent="1" name="category"/>
       <table id="3" parent="1" name="products"/>
-      <column id="4" parent="2" name="id">
+      <table id="4" parent="1" name="user"/>
+      <column id="5" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11) unsigned</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="5" parent="2" name="name">
+      <column id="6" parent="2" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="6" parent="2" name="sort_order">
+      <column id="7" parent="2" name="sort_order">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="7" parent="2" name="status">
+      <column id="8" parent="2" name="status">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <key id="8" parent="2" name="PRIMARY">
+      <key id="9" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="9" parent="3" name="id">
+      <column id="10" parent="3" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="10" parent="3" name="name">
+      <column id="11" parent="3" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="11" parent="3" name="category_id">
+      <column id="12" parent="3" name="category_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="12" parent="3" name="code">
+      <column id="13" parent="3" name="code">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="13" parent="3" name="price">
+      <column id="14" parent="3" name="price">
         <mandatory>1</mandatory>
         <data-type>float(10,2)</data-type>
       </column>
-      <column id="14" parent="3" name="availability">
+      <column id="15" parent="3" name="availability">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="15" parent="3" name="brand">
+      <column id="16" parent="3" name="brand">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="16" parent="3" name="image">
+      <column id="17" parent="3" name="image">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="17" parent="3" name="description">
+      <column id="18" parent="3" name="description">
         <mandatory>1</mandatory>
         <data-type>text</data-type>
       </column>
-      <column id="18" parent="3" name="is_new">
+      <column id="19" parent="3" name="is_new">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <default-expression>&apos;0&apos;</default-expression>
       </column>
-      <column id="19" parent="3" name="is_recommended">
+      <column id="20" parent="3" name="is_recommended">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <default-expression>&apos;0&apos;</default-expression>
       </column>
-      <column id="20" parent="3" name="status">
+      <column id="21" parent="3" name="status">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <default-expression>&apos;1&apos;</default-expression>
       </column>
-      <key id="21" parent="3" name="PRIMARY">
+      <key id="22" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="23" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="24" parent="4" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="25" parent="4" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="26" parent="4" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="27" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

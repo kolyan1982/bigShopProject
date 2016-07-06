@@ -14,8 +14,7 @@ class ProductController
 
         $product = [];
         $product = Product::getProductById($productId);
-        var_dump($product);
-
+        
         require_once(ROOT . '/views/product/view.php');
 
         return true;

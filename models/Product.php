@@ -75,7 +75,7 @@ class Product
      */
     public static function getProductById($id)
     {
-        $id = intval($id);
+        $id = (int)$id;
 
         if ($id) {
             $db = Db::getConnection();

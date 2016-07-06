@@ -11,11 +11,11 @@ error_reporting(E_ALL);
 
 //2.Подключение файлов системы
 define ('ROOT', __DIR__);
-//2.1 Подключили компонент Router
-require_once (ROOT . '/components/Router.php');
 
-//3.Установка соединения с БД
-require_once ROOT . '/components/Db.php';
+//2.2 Подключили клмпонент Autoload
+require_once ROOT . '/components/Autoload.php';
+
+
 
 //4.Вызов router
 
