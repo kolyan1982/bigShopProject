@@ -12,6 +12,8 @@ error_reporting(E_ALL);
 //2.Подключение файлов системы
 define ('ROOT', __DIR__);
 
+session_start();
+
 //2.2 Подключили клмпонент Autoload
 require_once ROOT . '/components/Autoload.php';
 
